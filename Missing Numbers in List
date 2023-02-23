@@ -1,0 +1,9 @@
+def check(list_new):
+    new_list=[]
+    for i in range(list_new[0],list_new[-1]):
+        if i not in new_list:
+            new_list.append(i)
+    print(new_list)
+list_new = [int(item)for item in input("enter a list here").split()]
+
+check(list_new)
